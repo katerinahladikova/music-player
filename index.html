@@ -7,30 +7,48 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=pause,skip_next,skip_previous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=pause,play_arrow,skip_next,skip_previous" />
 </head>
 <body class="bg-[#e4e4e4] container">
-    <h1 class="text-2xl my-4">Music player</h1>
-    <img class="aspect-square w-100" src=""/>
-    <div class="flex gap-8">
-        <button>
-            <span class="material-symbols-outlined text-4xl!">
-                skip_previous
-            </span>
-        </button>
-
-        <button class="w-15 bg-black aspect-square rounded-full text-white grid place-items-center">
-            <span class="material-symbols-outlined text-4xl!">
-                pause
-            </span>
-        </button>
-
-        <button>
-            <span class="material-symbols-outlined text-4xl!">
-                skip_next
-            </span>
-        </button>
-
+    <h1 class="text-6xl mt-8 mb-15">Music player</h1>
+    <div class="flex gap-25">
+        <img class="aspect-square w-100" src=""/>
+        <div class="flex flex-col gap-20">
+            <div>
+                <h2 class="text-3xl pb-2">Song name</h2>
+                <h3 class="text-xl">Interpret</h3>
+            </div>
+            <div>
+                <div class="bg-white h-0.5 w-100">
+                    <div class="w-1/2 h-full z-10 bg-black">
+            
+                    </div>
+                </div>
+                <div class="flex gap-8 justify-center pt-6">
+                    <button>
+                        <span class="material-symbols-outlined text-4xl!">
+                            skip_previous
+                        </span>
+                    </button>
+            
+                    <button class="w-15 bg-black aspect-square rounded-full text-white grid place-items-center">
+                        <span class="material-symbols-outlined text-4xl!">
+                            pause
+                        </span>
+                        <span class="material-symbols-outlined text-4xl! hidden!">
+                            play_arrow
+                        </span>
+                    </button>
+            
+                    <button>
+                        <span class="material-symbols-outlined text-4xl!">
+                            skip_next
+                        </span>
+                    </button>
+            
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
